@@ -3,6 +3,11 @@
 # This needs some logic.  It takes the center squares then the corners and then just bruteforces away at the puzzle.  
 # It ties a lot and occasionally wins.
 # Credit goes to viking that wrote the first version of this, binbuddha just chopped it up and got lucky.
+# ending is:
+# You've won 50 rounds...Let's play again
+# 
+# Just kidding...congrats!
+# The flag is: It's much easier if you put on your 3D glasses...
 
 import socket
 from socket import *

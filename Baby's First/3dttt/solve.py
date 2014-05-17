@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-# This needs some logic.  It just bruteforces away at the puzzle with no strategy and has yet to win a game.
+# This needs some logic.  It takes the center squares then the corners and then just bruteforces away at the puzzle.  
+# It ties a lot and occasionally wins.
 
 import socket
 from socket import *
@@ -21,20 +22,42 @@ def connect(host, port):
 	s.connect((remote_ip, port))
 	return s
 
+def corners(s):
+        # take the corners
+        moves = ["0,0,0\n", "0,2,0\n" "2,0,0\n", "2,2,0\n",
+                 "0,0,1\n", "0,2,1\n" "2,0,0\n", "2,2,1\n",
+                 "0,0,2\n", "0,2,2\n" "2,0,2\n", "2,2,2\n"]
+        for move in moves:
+                s.sendall(move)
+                reply = s.recv(4096)
+
+def centers(s):
+        # take the center
+        for z in range(3):
+                move = "1,1,%s\n" % z 
+                s.sendall(move)
+                reply = s.recv(4096)
+
 def solve(s):
-	for x in range(0,3):
-		for y in range(0,3):
-                	for z in range(0,3):
+	centers(s)
+	corners(s)
+
+	for z in range(3):
+		for x in range(3):
+                	for y in range(3):
                         	move = "%s,%s,%s\n" %(x,y,z)
                         	s.sendall(move)
                         	reply = s.recv(4096)
+				# print the end game and score
                         	if "won" in reply:
-					if "won -" in reply:
-						print reply
-						solve(s)
-					else:
-						print reply
-						return	
+					lines = reply.split("\n")
+					for line in lines:
+						print line
+						if "play" in line:
+							break	
+					# recurse away, they will disconnect us
+					solve(s)
+					
 
 if __name__ == "__main__":
 	

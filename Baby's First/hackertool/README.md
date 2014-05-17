@@ -8,6 +8,10 @@ hey, we need to check that your connection works, torrent this file and md5 it
 
 http://services.2014.shallweplayaga.me/hackertool.torrent_fe3b8b75e9639d35e8ac1d9809726ee2  
 
+## hints  
+
+KINDA A HINT FOR HACKERTOOL: http://imgur.com/XCtMjJ2  
+
 ## pwn it!   
 
 -- buddha's notes -----  

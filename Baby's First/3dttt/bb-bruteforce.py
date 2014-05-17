@@ -2,6 +2,7 @@
 
 # This needs some logic.  It takes the center squares then the corners and then just bruteforces away at the puzzle.  
 # It ties a lot and occasionally wins.
+# Credit goes to viking that wrote the first version of this, binbuddha just chopped it up and got lucky.
 
 import socket
 from socket import *

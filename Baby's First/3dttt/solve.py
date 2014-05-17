@@ -35,15 +35,17 @@ def solve(s):
 					else:
 						print reply
 						return	
+
+if __name__ == "__main__":
 	
-host = "3dttt_87277cd86e7cc53d2671888c417f62aa.2014.shallweplayaga.me"
-port = 1234
+	host = "3dttt_87277cd86e7cc53d2671888c417f62aa.2014.shallweplayaga.me"
+	port = 1234
 
-s = connect(host, port)
+	s = connect(host, port)
 
-# intro/banner screen
-reply = s.recv(4096)
-#print reply
+	# intro/banner screen
+	reply = s.recv(4096)
+	#print reply
 
-solve(s)
+	solve(s)
 

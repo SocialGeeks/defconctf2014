@@ -1,0 +1,32 @@
+# Nmap 6.46 scan initiated Sat May 17 01:07:48 2014 as: nmap -oA routarded -sS -A routarded_87f7837f50a5370771b9467d840c93c5.2014.shallweplayaga.me
+Nmap scan report for routarded_87f7837f50a5370771b9467d840c93c5.2014.shallweplayaga.me (54.82.181.125)
+Host is up (0.0087s latency).
+rDNS record for 54.82.181.125: ec2-54-82-181-125.compute-1.amazonaws.com
+Not shown: 997 filtered ports
+PORT     STATE SERVICE    VERSION
+111/tcp  open  rpcbind    2-4 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2,3,4        111/tcp  rpcbind
+|_  100000  2,3,4        111/udp  rpcbind
+5000/tcp open  http       Gunicorn 18.0
+| http-auth: 
+| HTTP/1.1 401 UNAUTHORIZED
+|_  Basic realm=Login Required
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+5666/tcp open  tcpwrapped
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): QEMU (93%)
+OS CPE: cpe:/o:qemu:qemu
+Aggressive OS guesses: QEMU user mode network gateway (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT     ADDRESS
+1   ...
+2   0.77 ms ec2-54-82-181-125.compute-1.amazonaws.com (54.82.181.125)
+
+OS and Service detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+# Nmap done at Sat May 17 01:08:51 2014 -- 1 IP address (1 host up) scanned in 63.02 seconds

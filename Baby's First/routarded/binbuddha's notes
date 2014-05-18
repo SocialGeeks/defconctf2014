@@ -38,3 +38,14 @@ PORT     STATE    SERVICE
 5666/tcp open     nrpe
 
 Nmap done: 1 IP address (1 host up) scanned in 12.09 seconds
+
+From the nmap, I found:
+Directory listing for /
+
+check_nfacct.out
+r.tgz
+tmpOy_wZj 
+
+on http port 4000
+
+the r.tgz has goodies

@@ -18,3 +18,23 @@ Content-Length: 90
 
 Could not verify your access level for that URL.
 You have to login with proper credentials
+
+
+nmap
+Nmap scan report for routarded_87f7837f50a5370771b9467d840c93c5.2014.shallweplayaga.me (54.82.181.125)
+Host is up (0.095s latency).
+rDNS record for 54.82.181.125: ec2-54-82-181-125.compute-1.amazonaws.com
+Not shown: 990 closed ports
+PORT     STATE    SERVICE
+22/tcp   filtered ssh
+25/tcp   filtered smtp
+111/tcp  open     rpcbind
+135/tcp  filtered msrpc
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+1720/tcp filtered H.323/Q.931
+4000/tcp open     remoteanything
+5000/tcp open     upnp
+5666/tcp open     nrpe
+
+Nmap done: 1 IP address (1 host up) scanned in 12.09 seconds

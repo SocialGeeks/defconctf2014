@@ -1,0 +1,50 @@
+strings babyfirst-heap_33ecf0ad56efc1b322088f95dd98827c 
+/lib/ld-linux.so.2
+__gmon_start__
+libc.so.6
+_IO_stdin_used
+exit
+signal
+puts
+memalign
+realloc
+stdin
+cfree
+sbrk
+calloc
+malloc_stats
+memset
+stdout
+memcpy
+mprotect
+malloc
+malloc_usable_size
+stderr
+alarm
+malloc_trim
+fprintf
+valloc
+setvbuf
+_IO_getc
+__libc_start_main
+GLIBC_2.0
+PTRhP
+0[^]
+UWVS
+[^_]
+Connection idle, closing.
+Did you forget to read the flag with your shellcode?
+Exiting
+Welcome to your first heap overflow...
+I am going to allocate 20 objects...
+Using Dougle Lee Allocator 2.6.1...
+Goodluck!
+Exit function pointer is at %X address.
+[ALLOC][loc=%X][size=%d]
+Write to object [size=%d]:
+Copied %d bytes.
+[FREE][address=%X]
+maximum bytes = %10u
+current bytes = %10u
+in use  bytes = %10u
+;*2$"

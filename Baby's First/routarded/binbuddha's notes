@@ -1,0 +1,20 @@
+wireshark dump of the connection:
+GET / HTTP/1.1
+Host: routarded_87f7837f50a5370771b9467d840c93c5.2014.shallweplayaga.me:5000
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+DNT: 1
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+
+HTTP/1.1 401 UNAUTHORIZED
+Server: gunicorn/18.0
+Date: Sun, 18 May 2014 00:00:09 GMT
+Connection: close
+WWW-Authenticate: Basic realm="Login Required"
+Content-Type: text/html; charset=utf-8
+Content-Length: 90
+
+Could not verify your access level for that URL.
+You have to login with proper credentials

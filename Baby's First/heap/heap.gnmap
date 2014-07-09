@@ -1,0 +1,4 @@
+# Nmap 6.46 scan initiated Sat May 17 18:14:17 2014 as: nmap -Pn -oA heap -sT -A babyfirst-heap_33ecf0ad56efc1b322088f95dd98827c.2014.shallweplayaga.me
+Host: 23.22.192.226 (ec2-23-22-192-226.compute-1.amazonaws.com)	Status: Up
+Host: 23.22.192.226 (ec2-23-22-192-226.compute-1.amazonaws.com)	Ports: 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 5666/open/tcp//tcpwrapped///	Ignored State: filtered (998)
+# Nmap done at Sat May 17 18:14:38 2014 -- 1 IP address (1 host up) scanned in 21.24 seconds
